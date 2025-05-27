@@ -1,0 +1,165 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+/* Navigation */
+/* Navigation */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+/* Ensure spacing below nav so it doesn't overlap */
+nav {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 1rem; /* <<< Add this line */
+}
+
+.nav-menu li a:link,
+.nav-menu li a:visited {
+  color: #0066cc;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a:active {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* Welcome Banner */
+#welcomeBanner {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Typography Enhancements */
+h2, h3 {
+  background: linear-gradient(to right, #336699, #66ccff);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Highlighted text */
+.highlight {
+  font-weight: bold;
+  color: #251284;
+}
+
+/* Event Image Table */
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+}
+
+.event-image {
+  border: 2px solid #444;
+  width: 150px;
+  height: 100px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Form Styling */
+form {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+}
+
+input, select, textarea, button {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #0066cc;
+}
+
+/* News Article */
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  margin: 20px 0;
+}
+
+/* Video */
+video {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .event-image {
+    width: 100px;
+    height: auto;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 0.5em;
+  }
+
+  .news-article {
+    column-count: 1;
+  }
+  
+}
